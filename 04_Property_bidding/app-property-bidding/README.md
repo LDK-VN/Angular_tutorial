@@ -1,7 +1,9 @@
 # Property bidding
 
 ## DataBinding  
-  1. `PropertyBiding`binding with template (component -> template)
+Two-Way Data-Binding: Bất cứ thay đổi nào trên view đều được tự động cập nhật vào component class và ngược lại
+
+  1. `PropertyBiding`binding with template (component -> template).
   2. `EventBidding` interactive with template (template -> component)
   3. Using `Curly brackets` when you want show information and using `Square brackets` when you want binding attributes of element
   
