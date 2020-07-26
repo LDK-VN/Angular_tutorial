@@ -4,3 +4,5 @@
 - Anuglar event binding syntax consists(Bao gồm) of a target event name within parentheses(Dấu ngoạc đơn) 
 on the left 
 of an equal sign, and a quoted template statement on the right.
+
+![alt text](https://angular.io/generated/images/guide/template-syntax/syntax-diagram.svg)
