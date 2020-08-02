@@ -28,4 +28,5 @@ export class PeekABooDirective implements OnInit {
 2. Timing
 
 #### ngOnChanges()
-- 1 .  Thực thi khi angular đặt hoặc đặt lại các thuộc tính đầu vào bị ràng buộc dữ liệu. Phương thức nhận một SimpleChangesđối tượng của các giá trị thuộc tính hiện tại và trước đó.
+- 1 .  Thực thi khi angular đặt hoặc đặt lại các thuộc tính đầu vào bị ràng buộc dữ liệu. Phương thức nhận một SimpleChangesđối tượng của các giá trị thuộc tính hiện tại và trước đó. Lưu ý rằng điều này xảy ra rất thường xuyên, do đó, bất kỳ thao tác nào bạn thực hiện ở đây đều ảnh hưởng đáng kể đến hiệu suất. Xem chi tiết trong tài liệu này [Using change detection hooks](https://angular.io/guide/lifecycle-hooks#onchanges) 
+
