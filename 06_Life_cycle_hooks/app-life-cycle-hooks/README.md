@@ -80,4 +80,4 @@ ngOnChanges(changes: SimpleChanges) {
 
 - 2 . Gọi một lần, sau lần đầu tiên ngOnChanges().
 
-- use cases: Nếu muốn add thêm cái thì đó khi component loaded, giống như đăng ký dữ liệu từ API, khởi tạo một số thư viện bên thứ 3.
+- use cases: Nếu muốn add thêm cái gì đó khi component loaded, giống như đăng ký dữ liệu từ API, khởi tạo một số thư viện bên thứ 3.
