@@ -9,6 +9,9 @@ import { Hero } from 'src/app/models/Hero';
 })
 export class OnChangesComponent implements OnChanges {
 
+  /**
+   * @Input dùng để chia sẻ biến hoặc giá trị nào đó từ component cha với component con bên trong
+   */
   @Input() hero: Hero;
   @Input() message: string;
 

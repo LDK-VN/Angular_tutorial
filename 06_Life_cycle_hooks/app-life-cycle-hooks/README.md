@@ -30,6 +30,27 @@ export class PeekABooDirective implements OnInit {
 #### ngOnChanges()
 - 1 .  Thực thi khi angular đặt hoặc đặt lại các thuộc tính đầu vào bị ràng buộc dữ liệu. Phương thức nhận một đối tượng SimpleChanges của các giá trị thuộc tính hiện tại và trước đó. Lưu ý rằng điều này xảy ra rất thường xuyên, do đó, bất kỳ thao tác nào bạn thực hiện ở đây đều ảnh hưởng đáng kể đến hiệu suất. Xem chi tiết trong tài liệu này [Using change detection hooks](https://angular.io/guide/lifecycle-hooks#onchanges) 
 
+- 2 . Được gọi trước ngOnInit () và bất cứ khi nào một hoặc nhiều data-bound inpput properties change.
+```
+@Component({
+  selector: 'my-component'
+})
+class MyComponent {
+  @Input() name:string;
+
+  ngOnChanges(changes) {
+  }
+
+  ngOnInit() {
+  }
+}
+```
+```
+<my-component [name]="somePropInParent"></my-component>
+```
+
+This make `name` a data-bound property.
+
 **on-changes.components(excerpt):**
 ```
 ngOnChanges(changes: SimpleChanges) {
@@ -50,5 +71,13 @@ ngOnChanges(changes: SimpleChanges) {
 
 **on-changes.component.ts:** 
 ```
-<on-changes [hero]="hero" [power]="power"></on-changes>F
+<on-changes [hero]="hero" [power]="power"></on-changes>
 ```
+
+#### ngOnInit()
+
+- 1 . 	Khởi tạo directive / component sau khi Angular hiển thị các thuộc tính ràng buộc dữ liệu và đặt các thuộc tính đầu vào của directive / component.
+
+- 2 . Gọi một lần, sau lần đầu tiên ngOnChanges().
+
+- use cases: Nếu muốn add thêm cái thì đó khi component loaded, giống như đăng ký dữ liệu từ API, khởi tạo một số thư viện bên thứ 3.

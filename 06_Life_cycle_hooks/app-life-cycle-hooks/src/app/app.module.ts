@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OnChangesComponent } from './components/on-changes/on-changes.component';
 import { OnChangesParentComponent } from './components/on-changes-parent/on-changes-parent.component';
+import { OnInitComponent } from './components/on-init/on-init.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OnChangesComponent,
-    OnChangesParentComponent
+    OnChangesParentComponent,
+    OnInitComponent
   ],
   imports: [
     BrowserModule,
