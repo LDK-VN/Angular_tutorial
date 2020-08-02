@@ -21,3 +21,11 @@ export class PeekABooDirective implements OnInit {
 <p align="center">
   <img src="https://github.com/LDK-VN/Angular_tutorial/blob/master/06_Life_cycle_hooks/app-life-cycle-hooks/src/assets/img/lifecycle_hooks.png" />
 </p>
+
+## Lifecycle event sequence
+
+1. Purpose
+2. Timing
+
+#### ngOnChanges()
+- 1 .  Thực thi khi angular đặt hoặc đặt lại các thuộc tính đầu vào bị ràng buộc dữ liệu. Phương thức nhận một SimpleChangesđối tượng của các giá trị thuộc tính hiện tại và trước đó.
