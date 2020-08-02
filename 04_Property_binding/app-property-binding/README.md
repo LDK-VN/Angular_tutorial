@@ -1,5 +1,7 @@
 # Property bidding
 
+Use property(thuộc tính) binding to set properties of target elements or directive @Input() decorators.
+
 ## DataBinding  
 Two-Way Data-Binding: Bất cứ thay đổi nào trên view đều được tự động cập nhật vào component class và ngược lại
 
