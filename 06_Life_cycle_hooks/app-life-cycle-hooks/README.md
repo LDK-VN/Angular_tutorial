@@ -18,3 +18,6 @@ export class PeekABooDirective implements OnInit {
   }
 }
 ```
+<p align="center">
+  <img src="https://github.com/LDK-VN/Angular_tutorial/blob/master/06_Life_cycle_hooks/app-life-cycle-hooks/src/assets/img/lifecycle_hooks.png" />
+</p>
