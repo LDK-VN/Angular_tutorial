@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "app-life-cycle-hooks"
+    }
+  },
+  "defaultProject": "app-life-cycle-hooks",
+  "cli": {
+    "analytics": "a6c65427-f374-4d2f-a98b-ac47a20d49e2"
+  }
 }

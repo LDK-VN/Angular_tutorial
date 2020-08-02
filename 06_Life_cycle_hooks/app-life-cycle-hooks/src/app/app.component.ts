@@ -1,9 +1,7 @@
-import { Component,
-          OnInit,
-        OnChanges,
-      OnDestroy,
-    AfterViewInit,
-   } from '@angular/core';
+import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
+import {Hero} from './models/Hero';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +9,12 @@ import { Component,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'app-life-cycle-hooks';
+  hero = new Hero('Khanh', 20);
+  msg: string = 'Hello World!';
+
+  onFormSubmit(heroForm: NgForm) {
+    let name = heroForm.controls['name'].value;
+     let age = heroForm.controls['age'].value;
+    this.hero = new Hero(name, age);
+  }
 }
